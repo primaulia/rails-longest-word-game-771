@@ -1,0 +1,6 @@
+<form action="score" method="get">
+  <label for="">Type your answers here:</label>
+  <input type="text" name="word" >
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="submit">
+</form>
