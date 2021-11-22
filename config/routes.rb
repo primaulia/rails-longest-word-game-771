@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'games#new'
-  get 'new', to: 'games#new'
-  get 'score', to: 'games#score'
+  root to: 'flats#index'
+  get 'flats', to: 'flats#index'
+  get 'flats/:id', to: 'flats#show', as: 'flat'
 end

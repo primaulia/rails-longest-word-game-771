@@ -1,0 +1,21 @@
+ <div class="row">
+  
+  <% @flats.each do |flat| %>
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag flat["imageUrl"] %>
+          <span class="card-title">
+            <%= link_to flat_path(flat["id"]), class:"btn-floating waves-effect waves-light red" do %>
+              <i class="material-icons">add</i>
+            <% end %>
+          </span>
+        </div>
+        <div class="card-action">
+          <%= link_to flat["name"], flat_path(flat["id"])  %>
+        </div>
+      </div>
+    </div>
+  <% end %> 
+
+</div>

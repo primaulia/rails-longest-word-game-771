@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col s8">
+    <div class="card">
+      <div class="card-image">
+        <%= image_tag @flat["imageUrl"] %>
+      </div>
+      <div class="card-content">
+        <p><%= @flat["name"] %></p>
+      </div>
+    </div>
+  </div>
+  <div class="col s4">
+    <img id="map" width="100%" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/18.7072,38.9963,1.05,0/600x800?access_token=pk.eyJ1IjoiZG1pbG9uIiwiYSI6ImNrdHlpejZ3eTFleGUybnA4N2Rwa2J2a24ifQ.O8GDpHfLESId83b0vaJCAA">
+  </div>
+</div>

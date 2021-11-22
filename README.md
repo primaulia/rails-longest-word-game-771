@@ -1,24 +1,8 @@
-# README
+No Database AirBnB
+Let’s build a simple AirBnB clone with a remote static JSON DB with:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+URL = https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[] Create new rails app --> rails new ?? --skip-active-storage --skip-action-mailbox
+[] A home page listing flats --> GET '/', to: 'flats#index'
+[] A dynamic show page for a specific flat --> GET '/flats/:id', to: 'flats#show'
